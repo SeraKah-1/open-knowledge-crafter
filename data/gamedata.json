@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "topic": "Human Anatomy",
+    "version": "0.1-alpha",
+    "description": "Basic anatomy crafting logic"
+  },
+  "library": [
+    {
+      "id": "base_001",
+      "name": "Sel",
+      "type": "ELEMENT",
+      "tier": 0,
+      "description": "Unit dasar kehidupan.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Animal_cell_structure_en.svg/300px-Animal_cell_structure_en.svg.png",
+      "recipes": []
+    },
+    {
+      "id": "base_002",
+      "name": "Oksigen",
+      "type": "ELEMENT",
+      "tier": 0,
+      "description": "Gas vital untuk respirasi sel.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Oxygen_molecule.png/300px-Oxygen_molecule.png",
+      "recipes": []
+    },
+    {
+      "id": "res_001",
+      "name": "Respirasi Sel",
+      "type": "COMPOUND",
+      "tier": 1,
+      "description": "Proses sel menggunakan oksigen untuk energi.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Cellular_respiration.gif/300px-Cellular_respiration.gif",
+      "recipes": [
+        ["base_001", "base_002"] 
+      ]
+    }
+  ]
+}
