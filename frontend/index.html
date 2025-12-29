@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Knowledge Crafter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app-container">
+        <header>
+            <h1 id="topic-title">Loading Topic...</h1>
+            <div class="stats">
+                <span id="discovery-count">Discovered: 0/0</span>
+            </div>
+        </header>
+
+        <section class="workbench">
+            <div class="slot-container">
+                <div class="slot" id="slot-1" onclick="returnCard(1)">
+                    <span class="placeholder-text">Select Card 1</span>
+                </div>
+                <div class="plus-sign">+</div>
+                <div class="slot" id="slot-2" onclick="returnCard(2)">
+                    <span class="placeholder-text">Select Card 2</span>
+                </div>
+            </div>
+            <button id="btn-combine" onclick="attemptCombine()">COMBINE</button>
+            <div id="message-log">Select two cards to experiment.</div>
+        </section>
+
+        <hr>
+
+        <div class="card-area">
+            <div class="panel">
+                <h3>Elements (Inventory)</h3>
+                <div id="inventory-grid" class="grid-container">
+                    </div>
+            </div>
+
+            <div class="panel">
+                <h3>Discoveries</h3>
+                <div id="library-grid" class="grid-container">
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="logic.js"></script>
+</body>
+</html>
